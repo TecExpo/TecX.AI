@@ -1,2 +1,2 @@
 # TecX.AI
-www.tecx.ai
+https://www.tecx.ai
