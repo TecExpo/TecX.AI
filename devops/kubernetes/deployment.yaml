@@ -1,0 +1,3 @@
+kubernetes/       # K8s configurations for container orchestration
+│   │   ├── deployment.yaml
+│   │   ├── service.yaml
