@@ -55,7 +55,7 @@ TecX.AI/
 Clone the repository and navigate into the project folder:
 ```sh
 git clone https://github.com/TecExpo/TecX.AI.git
-cd AI-Web3-Website
+cd TecX.AI
 ```
 
 ### Start the Frontend
