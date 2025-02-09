@@ -229,7 +229,7 @@ We welcome contributions! Please do as following
 4. Follow coding best practices and security guidelines.
 
 ## 📜 License
-This project is licensed under the GNU GPL and, MIT License. See `LICENSE` for details.
+This project is licensed under the GNU V3 GPL and, MIT License. See `LICENSE` for details.
 
 ## 📞 Contact
 For any inquiries, issues or questions, please open an issue on GitHub or contact the maintainers at `support@tecx.ai',or 'adm@tecx.ai`.
