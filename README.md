@@ -54,7 +54,7 @@ TecX.AI/
 ### Installation
 Clone the repository and navigate into the project folder:
 ```sh
-git clone https://github.com/YOUR_USERNAME/AI-Web3-Website.git
+git clone https://github.com/TecExpo/TecX.AI.git
 cd AI-Web3-Website
 ```
 
