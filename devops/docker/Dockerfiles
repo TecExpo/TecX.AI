@@ -1,1 +1,4 @@
 
+│── devops/               # Deployment and automation
+│   ├── docker/           # Dockerfiles for containerization
+│   │   ├── Dockerfile
