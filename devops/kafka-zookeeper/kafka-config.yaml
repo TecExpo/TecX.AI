@@ -1,0 +1,4 @@
+│   ├── kafka-zookeeper/  # Kafka message broker and Zookeeper coordination service
+│   │   ├── kafka-config.yaml
+│   │   ├── producer.py
+│   │   ├── consumer.py
