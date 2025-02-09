@@ -29,38 +29,109 @@ Monitoring & Logging: Prometheus, Grafana, Loki, ELK Stack
 ```
 TecX.AI/
 │── frontend/              # React.js / Next.js frontend
-│   ├── public/           # Static assets
+│   ├── public/           # Static assets (e.g., images, favicon, static HTML files)
+│   │   ├── index.html    # Static fallback homepage (for non-Next.js builds)
 │   ├── src/
 │   │   ├── components/   # Reusable UI components
+│   │   │   ├── Navbar.js
+│   │   │   ├── Footer.js
+│   │   │   ├── Button.js
 │   │   ├── pages/        # Next.js pages
+│   │   │   ├── index.js  # Homepage entry point for Next.js
+│   │   │   ├── login.js  # Login page
+│   │   │   ├── dashboard.js  # User dashboard
 │   │   ├── styles/       # Tailwind CSS styles
+│   │   │   ├── globals.css
+│   │   │   ├── theme.css
 │   │   ├── utils/        # Helper functions
-│   │   ├── web3/         # Web3 integrations (MetaMask, WalletConnect)
+│   │   │   ├── api.js    # API calls
+│   │   │   ├── format.js # Formatting utilities
+│   │   ├── web3/         # Web3 integrations (MetaMask, WalletConnect, The Graph, Oracles)
+│   │   │   ├── provider.js
+│   │   │   ├── connectWallet.js
 │   │   ├── hooks/        # Custom React hooks
+│   │   │   ├── useAuth.js
+│   │   │   ├── useWeb3.js
 │── backend/              # API layer
 │   ├── fastapi/          # FastAPI microservices
+│   │   ├── main.py
+│   │   ├── routes/
+│   │   │   ├── user.py
+│   │   │   ├── auth.py
+│   │   ├── models.py
 │   ├── express/          # Express.js microservices
+│   │   ├── index.js
+│   │   ├── routes/
+│   │   │   ├── user.js
+│   │   │   ├── auth.js
 │   ├── authentication/   # SAML, OAuth2, JWT authentication
+│   │   ├── auth.js
+│   │   ├── samlConfig.js
 │   ├── websocket/        # Real-time WebSocket services
-│   ├── ai_models/        # AI Model Deployment (Hugging Face, TF-Serving)
+│   │   ├── server.js
+│   ├── ai_models/        # AI Model Deployment (Hugging Face, TF-Serving, PyTorch, NLP, Computer Vision)
+│   │   ├── model.py
+│   │   ├── inference.py
+│   ├── logging/          # Centralized logging (ELK Stack, Loki, Fluentd)
 │── web3/                 # Smart contracts and blockchain logic
 │   ├── contracts/        # Solidity smart contracts
+│   │   ├── Contract.sol
 │   ├── scripts/          # Deployment and interaction scripts
-│   ├── test/             # Smart contract testing
+│   │   ├── deploy.js
+│   ├── test/             # Smart contract testing (Slither, Mythril)
+│   │   ├── contract.test.js
+│   ├── security/         # Security audits and vulnerability scanning
+│   ├── subgraphs/        # The Graph integration for indexing
 │── database/             # Database and storage
 │   ├── sql/              # PostgreSQL schemas
+│   │   ├── schema.sql
 │   ├── nosql/            # MongoDB models
+│   │   ├── userModel.js
+│   ├── redis/            # Redis caching
+│   │   ├── cache.js
 │   ├── ipfs/             # IPFS & Arweave storage
 │── devops/               # Deployment and automation
-│   ├── docker/           # Dockerfiles
-│   ├── kubernetes/       # K8s configurations
+│   ├── docker/           # Dockerfiles for containerization
+│   │   ├── Dockerfile
+│   ├── kubernetes/       # K8s configurations for container orchestration
+│   │   ├── deployment.yaml
+│   │   ├── service.yaml
+│   ├── terraform/        # Infrastructure as Code (IaC) using Terraform
+│   │   ├── main.tf
 │   ├── ci-cd/            # GitHub Actions, Jenkins pipelines
+│   │   ├── github-actions.yml
+│   ├── security/         # Security monitoring and vulnerability scanning
+│   ├── monitoring/       # Monitoring (Prometheus, Grafana, Loki)
+│   │   ├── prometheus.yaml
+│   │   ├── grafana.yaml
+│   ├── kafka-zookeeper/  # Kafka message broker and Zookeeper coordination service
+│   │   ├── kafka-config.yaml
+│   │   ├── producer.py
+│   │   ├── consumer.py
+│   ├── load-balancer/    # Nginx, HAProxy for traffic management
+│   │   ├── nginx.conf
+│── ai-engine/            # AI Pipelines and Training
+│   ├── models/          # Pretrained AI models and training data
+│   ├── training/        # Scripts for AI model training and fine-tuning
+│   │   ├── train.py
+│   ├── inference/       # AI inference API for real-time predictions
+│   │   ├── infer.py
+│   ├── pipelines/       # Data processing pipelines
+│   │   ├── preprocess.py
+│   ├── notebooks/       # Jupyter notebooks for research and development
+│   │   ├── model_exploration.ipynb
+│   ├── requirements.txt # Dependencies for AI model execution
+│── tests/                # Testing
+│   ├── unit-tests/       # Unit testing for all modules
+│   ├── integration-tests/ # API and full-system tests
+│   ├── load-tests/       # Performance and stress testing
+│   ├── security-tests/   # Security and vulnerability testing
+│── scripts/              # Deployment & automation
+│   ├── deploy.sh        # Automated deployment script
+│   ├── backup/          # Database backup and restore scripts
 │── docs/                 # Documentation
 │── .gitignore            # Ignore files
-│── README.md             # Project overview
-│── LICENSE               # Open-source license
-```
-
+│── README.md             # Project overvie
 ## 🚀 Getting Started
 
 ### Prerequisites
