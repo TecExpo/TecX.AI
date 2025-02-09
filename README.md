@@ -4,6 +4,26 @@ https://www.tecx.ai
 
 This repository contains a fully-featured AI-powered Web3 website with modern authentication, AI models, smart contracts, and cloud deployment.
 
+Features
+
+Frontend: React.js / Next.js with Tailwind CSS
+
+Backend: FastAPI (Python) & Express.js (Node.js)
+
+Authentication: SAML, OAuth2, JWT
+
+Web3 Integration: Solidity smart contracts, The Graph, Oracles
+
+AI Models: Hugging Face, TensorFlow-Serving, PyTorch
+
+Messaging & Streaming: Kafka with Zookeeper
+
+Database: PostgreSQL, MongoDB, Redis, IPFS
+
+DevOps & Deployment: Docker, Kubernetes, Terraform, CI/CD with GitHub Actions
+
+Monitoring & Logging: Prometheus, Grafana, Loki, ELK Stack
+
 ## 📂 Project Structure
 
 ```
@@ -51,13 +71,18 @@ TecX.AI/
 - Hardhat (for smart contract deployment)
 - PostgreSQL or MongoDB (database setup)
 
+📌 Setup Instructions
+
+1️⃣ Clone the Repository
 ### Installation
 Clone the repository and navigate into the project folder:
 ```sh
 git clone https://github.com/TecExpo/TecX.AI.git
 cd TecX.AI
 ```
+2️⃣ Install Dependencies
 
+Frontend (React.js / Next.js)
 ### Start the Frontend
 Navigate to the `frontend` directory and start the development server:
 ```sh
@@ -65,24 +90,40 @@ cd frontend
 npm install
 npm run dev
 ```
-
+Backend (FastAPI / Express.js)
 ### Start the Backend
 Navigate to the `backend` directory and run the servers:
 ```sh
 cd backend
+pip install -r requirements.txt  # FastAPI
 # Start FastAPI server
 uvicorn fastapi.main:app --reload
 # Start Express.js server
-npm install
+npm install       # Express.js
 node server.js
 ```
+3️⃣ Configure Environment Variables
 
+Create a .env file in backend/ and frontend/ with required API keys and settings.
+
+4️⃣ Start Services
+
+Using Docker
+docker-compose up --build
+
+Manually
+
+cd frontend && npm run dev  # Start frontend
+cd backend/fastapi && uvicorn main:app --reload  # Start FastAPI
+cd backend/express && node index.js  # Start Express.js
+
+5️⃣ Deploy Smart Contracts
 ### Deploy Smart Contracts
 Compile and deploy the smart contracts using Hardhat:
 ```sh
 cd web3
 npx hardhat compile
-npx hardhat run scripts/deploy.js
+npx hardhat run scripts/deploy.js   --network rinkeby
 ```
 
 ### Run Database
@@ -98,10 +139,10 @@ The repository includes a CI/CD pipeline using GitHub Actions. Push changes to t
 ## 🛠️ Tech Stack
 - **Frontend**: React.js, Next.js, Tailwind CSS, Web3.js
 - **Backend**: FastAPI (Python), Express.js (Node.js), WebSockets
-- **AI**: Hugging Face, TensorFlow, OpenAI APIs
-- **Web3**: Solidity, Hardhat, Ethers.js, IPFS, Arweave
-- **Database**: PostgreSQL, MongoDB
-- **DevOps**: Docker, Kubernetes, GitHub Actions, Jenkins
+- **AI**: Hugging Face, TensorFlow, PyTorch, NLP,  OpenAI APIs
+- **Web3**: Solidity, Hardhat, MetaMask, The Graph, Ethers.js, IPFS, Arweave
+- **Database**: PostgreSQL, MongoDB, Redis, IPFS
+- **DevOps**: Docker, Kubernetes, Terraform, CI/CD(GitHub Actions, Jenkins)
 
 ## 🔐 Security Considerations
 - **Authentication**: Implements SAML, OAuth2, and JWT-based authentication.
@@ -110,7 +151,8 @@ The repository includes a CI/CD pipeline using GitHub Actions. Push changes to t
 - **Environment Variables**: Ensure API keys and secrets are stored securely.
 
 ## 🤝 Contribution Guidelines
-1. Fork the repository and create a new branch.
+We welcome contributions! Please do as following 
+1. Fork the repository and create a new branch(feature).
 2. Make changes and commit with meaningful messages.
 3. Submit a pull request for review.
 4. Follow coding best practices and security guidelines.
@@ -119,8 +161,8 @@ The repository includes a CI/CD pipeline using GitHub Actions. Push changes to t
 This project is licensed under the GNU GPL and, MIT License. See `LICENSE` for details.
 
 ## 📞 Contact
-For issues or questions, please open an issue on GitHub or contact the maintainers at `adm@tecx.ai`.
+For any inquiries, issues or questions, please open an issue on GitHub or contact the maintainers at `support@tecx.ai',or 'adm@tecx.ai`.
 
 ---
 
-This README provides a complete overview of the AI Web3 Website repository, including setup instructions, technology stack, security considerations, and contribution guidelines.
+This Document provides a complete overview of the AI Web3 Website repository, including setup instructions, technology stack, security considerations, and contribution guidelines.
