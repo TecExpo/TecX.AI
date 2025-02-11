@@ -1,0 +1,38 @@
+{
+  "dashboard": {
+    "annotations": {
+      "list": [
+        {
+          "builtIn": 1,
+          "type": "dashboard",
+          "name": "Backend API Metrics",
+          "enabled": true
+        }
+      ]
+    },
+    "panels": [
+      {
+        "title": "API Response Time",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "http_request_duration_seconds",
+            "legendFormat": "{{method}} - {{status}}",
+            "interval": "5s"
+          }
+        ]
+      },
+      {
+        "title": "CPU Usage",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "node_cpu_seconds_total",
+            "legendFormat": "{{mode}}",
+            "interval": "10s"
+          }
+        ]
+      }
+    ]
+  }
+}
