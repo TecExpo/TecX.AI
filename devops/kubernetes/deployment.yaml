@@ -1,3 +1,29 @@
-kubernetes/       # K8s configurations for container orchestration
-│   │   ├── deployment.yaml
-│   │   ├── service.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ai-web3-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: ai-web3
+  template:
+    metadata:
+      labels:
+        app: ai-web3
+    spec:
+      containers:
+        - name: ai-web3-container
+          image: myrepo/ai-web3:latest
+          ports:
+            - containerPort: 80
+          env:
+            - name: NODE_ENV
+              value: "production"
+          resources:
+            requests:
+              memory: "512Mi"
+              cpu: "250m"
+            limits:
+              memory: "1Gi"
+              cpu: "500m"
