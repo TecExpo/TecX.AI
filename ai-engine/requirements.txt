@@ -1,1 +1,28 @@
-├── requirements.txt # Dependencies for AI model execution
+# Core Libraries
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+
+# Deep Learning & AI
+torch
+torchvision
+torchaudio
+tensorflow
+keras
+transformers
+
+# Image Processing
+pillow
+opencv-python
+
+# Data Handling & API
+requests
+fastapi
+uvicorn
+
+# Miscellaneous
+tqdm
+jupyter
+ipykernel
