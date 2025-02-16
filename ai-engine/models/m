@@ -1,2 +1,4 @@
 ai-engine/            # AI Pipelines and Training
 │   ├── models/          # Pretrained AI models and training data
+ai-engine/models/ (AI Models Directory)
+This directory will store pre-trained AI models used for various tasks such as NLP, Computer Vision, and AI inference.
