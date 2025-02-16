@@ -1,4 +1,6 @@
 bash
+chmod +x ai-engine/infer.sh
+./ai-engine/infer.sh
 chmod +x ai-engine/preprocess.sh
 ./ai-engine/preprocess.sh
 chmod +x ai-engine/Model_Exploration.sh
