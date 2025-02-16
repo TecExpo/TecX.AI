@@ -1,1 +1,1 @@
-python ai-engine/pipelines/preprocess.py
+python ./pipelines/preprocess.py
