@@ -1,4 +1,6 @@
 bash
+chmod +x ai-engine/install_packages.sh
+./ai-engine/install_packages.sh
 echo "To run all unit tests:"
 pytest tests/unit-tests/
 echo "To run integration tests:"
