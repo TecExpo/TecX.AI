@@ -1,4 +1,7 @@
 bash
+
+echo "To run integration tests:"
+pytest tests/integration-tests/
 echo "To run load tests:"
 pytest tests/load-tests/
 echo "To run security tests"
