@@ -1,4 +1,7 @@
 bash
+echo "To run security tests"
+pytest tests/security-tests/
+
 chmod +x scripts/deploy.sh
 ./scripts/deploy.sh
 chmod +x scripts/backup/*.sh
