@@ -1,5 +1,6 @@
 bash
-
+echo "To run all unit tests:"
+pytest tests/unit-tests/
 echo "To run integration tests:"
 pytest tests/integration-tests/
 echo "To run load tests:"
