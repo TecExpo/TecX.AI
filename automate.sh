@@ -17,16 +17,17 @@ cd ./tests
 echo "To run all unit tests:"
 pytest unit-tests/
 echo "To run integration tests:"
-pytest tests/integration-tests/
+pytest integration-tests/
 echo "To run load tests:"
-pytest tests/load-tests/
+pytest load-tests/
 echo "To run security tests"
-pytest tests/security-tests/
+pytest security-tests/
 cd ../
-chmod +x scripts/deploy.sh
-./scripts/deploy.sh
-chmod +x scripts/backup/*.sh
-./scripts/backup/db_backup.sh
-./scripts/backup/log_backup.sh
-./scripts/backup/ipfs_backup.sh
-
+cd ./scripts
+chmod +x deploy.sh
+./deploy.sh
+chmod +x backup/*.sh
+./backup/db_backup.sh
+./backup/log_backup.sh
+./backup/ipfs_backup.sh
+cd ../
