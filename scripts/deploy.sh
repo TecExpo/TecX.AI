@@ -13,6 +13,7 @@ DATABASE_DIR="database"
 DEVOPS_DIR="devops"
 
 # Step 1: Install Dependencies
+cd ..
 echo "📦 Installing dependencies..."
 cd $FRONTEND_DIR && npm install && cd ..
 cd $BACKEND_DIR/express && npm install && cd ../..
