@@ -1,4 +1,6 @@
 bash
+chmod +x ai-engine/preprocess.sh
+./ai-engine/preprocess.sh
 chmod +x ai-engine/Model_Exploration.sh
 ./ai-engine/Model_Exploration.sh
 chmod +x ai-engine/install_packages.sh
