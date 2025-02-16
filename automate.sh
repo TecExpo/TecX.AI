@@ -1,4 +1,7 @@
 bash
+
+chmod +x ai-engine/train.sh
+./ai-engine/train.sh
 chmod +x ai-engine/infer.sh
 ./ai-engine/infer.sh
 chmod +x ai-engine/preprocess.sh
