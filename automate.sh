@@ -2,26 +2,27 @@
 echo this is bash shell
 echo "installing package for ai-engine directory"
 cd ./ai-engine
-chmod +x /install_packages.sh
+chmod +x install_packages.sh
 ./install_packages.sh
-chmod +x /train.sh
+chmod +x train.sh
 ./train.sh
-chmod +x /infer.sh
+chmod +x infer.sh
 ./infer.sh
-chmod +x /preprocess.sh
+chmod +x preprocess.sh
 ./preprocess.sh
-chmod +x /Model_Exploration.sh
+chmod +x Model_Exploration.sh
 ./Model_Exploration.sh
 cd ../
+cd ./tests
 echo "To run all unit tests:"
-pytest tests/unit-tests/
+pytest unit-tests/
 echo "To run integration tests:"
 pytest tests/integration-tests/
 echo "To run load tests:"
 pytest tests/load-tests/
 echo "To run security tests"
 pytest tests/security-tests/
-
+cd ../
 chmod +x scripts/deploy.sh
 ./scripts/deploy.sh
 chmod +x scripts/backup/*.sh
