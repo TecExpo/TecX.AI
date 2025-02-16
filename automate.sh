@@ -2,18 +2,17 @@
 echo this is bash shell
 echo "installing package for ai-engine directory"
 cd ./ai-engine
-chmod +x ai-engine/install_packages.sh
-./ai-engine/install_packages.sh
+chmod +x /install_packages.sh
+./install_packages.sh
+chmod +x /train.sh
+./train.sh
+chmod +x /infer.sh
+./infer.sh
+chmod +x /preprocess.sh
+./preprocess.sh
+chmod +x /Model_Exploration.sh
+./Model_Exploration.sh
 cd ../
-chmod +x ai-engine/train.sh
-./ai-engine/train.sh
-chmod +x ai-engine/infer.sh
-./ai-engine/infer.sh
-chmod +x ai-engine/preprocess.sh
-./ai-engine/preprocess.sh
-chmod +x ai-engine/Model_Exploration.sh
-./ai-engine/Model_Exploration.sh
-
 echo "To run all unit tests:"
 pytest tests/unit-tests/
 echo "To run integration tests:"
