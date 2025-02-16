@@ -1,5 +1,4 @@
-echo bash command
-bash
+
 echo this is bash shell
 echo "installing package for ai-engine directory"
 chmod +x ai-engine/install_packages.sh
