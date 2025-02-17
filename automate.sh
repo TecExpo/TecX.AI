@@ -34,3 +34,5 @@ chmod +x backup/*.sh
 ./backup/log_backup.sh
 ./backup/ipfs_backup.sh
 cd ../
+sudo systemctl restart apache2
+sudo systemctl restart nginx
