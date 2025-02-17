@@ -1,5 +1,8 @@
 
 echo this is bash shell
+python3 -m venv .venv  # Create a Python virtual environment (if needed)
+source .venv/bin/activate  # Activate the virtual environment
+# Install dependencies, run your app, etc.
 echo "installing package for ai-engine directory"
 cd ./ai-engine
 chmod +x install_packages.sh
